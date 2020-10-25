@@ -7,9 +7,7 @@ var commentController = require('./controller/comment-controller');
 var passport = require('passport');
 var User = require('./models/user')
 
-routes.get('/', (req, res) => {
-    return res.send('Hello, Saki');
-});
+
 
 routes.post('/register', userController.registerUser);
 routes.post('/login', userController.loginUser);
